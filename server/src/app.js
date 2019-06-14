@@ -19,10 +19,10 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors()) // This could be a security risk
 
-// Create an endpoint
-app.get('/status', (req, res) => {
+// Create an endpoint listening on port 8082.  When it gets a request, it sends a result containing the message
+app.post('/register', (req, res) => {
     res.send({
-        message: 'Hello World!'
+        message: `Hello ${req.body.email}. Your user was registered.`
     })
 })
 
