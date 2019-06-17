@@ -10,6 +10,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
+const { sequelize } = require('./models')
+const config = require('./config/config')
 
 // Let us build up an express server
 const app = express()
@@ -19,11 +21,11 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors()) // This could be a security risk
 
-// Create an endpoint listening on port 8082.  When it gets a request, it sends a result containing the message
-app.post('/register', (req, res) => {
-    res.send({
-        message: `Hello ${req.body.email}. Your user was registered.`
-    })
-})
+// Get the various routes from the routes.js file
+require('./routes')(app)
 
-app.listen(process.env.PORT || 8082)
+sequelize.sync()
+    .then(() => {
+        app.listen(config.port)
+        console.log(`server started on port ${config.port}`)
+    })

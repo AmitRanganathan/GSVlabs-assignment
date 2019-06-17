@@ -2,9 +2,8 @@
     <v-layout row>
         <v-flex>
             <div class ="white elevation-2">
-
                 <v-toolbar flat dense class="light-blue" dark>
-                    <v-toolbar-title>Register </v-toolbar-title>
+                    <v-toolbar-title>Login</v-toolbar-title>
                 </v-toolbar>
                 <div class="pl-4 pr-4 pt-2 pb-2">
                     <v-text-field
@@ -18,7 +17,6 @@
                         v-model="password"
                         type="password"
                         label="Password"
-                        autocomplete="new-password"
                     ></v-text-field>
                     <br>
                     <div class="error" v-html="error" /> 
@@ -26,8 +24,8 @@
                     <v-btn 
                         dark
                         class="light-blue"
-                        @click="register">
-                    Reigster
+                        @click="login">
+                    Login
                     </v-btn>
                 </div>
             </div>
@@ -46,18 +44,17 @@
             }
         },
         methods: {
-            async register () {
-                try{
-                    const response = await AuthenticationService.register({
+            async login () {
+                 try{
+                    const response = await AuthenticationService.login({
                         email: this.email,
                         password: this.password
                     })
                     this.$store.dispatch('setToken', response.data.token)
                     this.$store.dispatch('setUser', response.data.user)
-
                 } catch (error) {
                     this.error = error.response.data.error
-                }
+                } 
                 
             }
         }
