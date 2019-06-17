@@ -1,5 +1,6 @@
 const AuthenticationController = require('./controllers/AuthenticationController')
 const AuthenticationControllerPolicy = require('./policies/AuthenticationControllerPolicy')
+const PoemsController = require('./controllers/PoemsController')
 
 // Declaring routes that point to controllers
 module.exports = (app) => {
@@ -9,4 +10,9 @@ module.exports = (app) => {
     
     app.post('/login', 
         AuthenticationController.login)
+
+    app.get('/poems', 
+        PoemsController.index)
+
+    
 }

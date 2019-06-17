@@ -1,40 +1,36 @@
 <template>
     <v-layout row>
         <v-flex>
-            <div class ="white elevation-2">
-                <v-toolbar flat dense class="light-blue" dark>
-                    <v-toolbar-title>Login</v-toolbar-title>
-                </v-toolbar>
-                <div class="pl-4 pr-4 pt-2 pb-2">
-                    <v-text-field
-                        name="email"
-                        v-model="email"
-                        label="Email"
-                    ></v-text-field>
-                    <br>
-                    <v-text-field
-                        name="password"
-                        v-model="password"
-                        type="password"
-                        label="Password"
-                    ></v-text-field>
-                    <br>
-                    <div class="error" v-html="error" /> 
-                    <br>
-                    <v-btn 
-                        dark
-                        class="light-blue"
-                        @click="login">
-                    Login
-                    </v-btn>
-                </div>
-            </div>
+            <panel title="Login">
+                <v-text-field
+                    name="email"
+                    v-model="email"
+                    label="Email"
+                ></v-text-field>
+                <br>
+                <v-text-field
+                    name="password"
+                    v-model="password"
+                    type="password"
+                    label="Password"
+                ></v-text-field>
+                <br>
+                <div class="error" v-html="error" /> 
+                <br>
+                <v-btn 
+                    dark
+                    class="light-blue"
+                    @click="login">
+                Login
+                </v-btn>
+            </panel>    
         </v-flex>
     </v-layout>
 </template>
 
 <script>
     import AuthenticationService from '@/services/AuthenticationService'
+    import Panel from '@/components/Panel'
     export default {
         data () {
             return {
@@ -57,6 +53,9 @@
                 } 
                 
             }
+        },
+        components: {
+            Panel
         }
     }
 </script>
