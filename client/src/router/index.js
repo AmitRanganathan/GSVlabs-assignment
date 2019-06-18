@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Poems from '@/components/Poems'
+import CreatePoem from '@/components/createPoem'
+import ViewPoem from '@/components/ViewPoem'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/poems',
       name: 'poems',
       component: Poems
+    },
+    {
+      path: '/poems/create',
+      name: 'poems-create',
+      component: CreatePoem
+    },
+    {
+      path: '/poems/:poemId',
+      name: 'poem',
+      component: ViewPoem
     }
   ]
 })

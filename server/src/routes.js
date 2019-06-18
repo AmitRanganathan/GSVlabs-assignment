@@ -13,6 +13,9 @@ module.exports = (app) => {
 
     app.get('/poems', 
         PoemsController.index)
+    
+    app.post('/poems', 
+        PoemsController.post)
 
     
 }
