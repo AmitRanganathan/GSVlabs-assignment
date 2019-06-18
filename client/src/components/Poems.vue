@@ -2,7 +2,7 @@
     <v-layout row>
         <v-flex>
             <panel title="Poems">
-                <v-btn
+                <v-btn v-if="$store.state.isLoggedIn"
                     slot="makePoem"
                     @click="navigateTo({name: 'poems-create'})"
                     fab
@@ -37,7 +37,6 @@
                             </v-btn>
                         </v-flex>
 
-                            
                         <v-flex xs6>
                             <div class="poem-date-created">
                                 Created on: {{moment(poem.createdAt).format('MMMM Do YYYY h:mm a')}}
