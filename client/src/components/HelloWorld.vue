@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2> To begin: Please make an account using the sign up button!</h2>
+    <br>
+    <h2> To begin: Please make an account using the sign up button! </h2>
+    <h2> If you already have an account, then just log in and have fun! </h2>
   </div>
 </template>
 
