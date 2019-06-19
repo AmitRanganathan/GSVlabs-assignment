@@ -6,6 +6,8 @@ import Login from '@/components/Login'
 import Poems from '@/components/Poems'
 import CreatePoem from '@/components/createPoem'
 import ViewPoem from '@/components/ViewPoem'
+import EditPoem from '@/components/EditPoem'
+
 
 Vue.use(Router)
 
@@ -40,6 +42,12 @@ export default new Router({
       path: '/poems/:poemId',
       name: 'poem',
       component: ViewPoem
+    },
+    {
+      path: '/poems/:poemId/edit',
+      name: 'poems-edit',
+      component: EditPoem
     }
+
   ]
 })

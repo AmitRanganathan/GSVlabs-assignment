@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         verb2: DataTypes.STRING,
         verb3: DataTypes.STRING,
     })
+    
 
 
     return Poem

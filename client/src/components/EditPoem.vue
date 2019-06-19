@@ -130,8 +130,8 @@
         <v-btn 
             dark
             class="light-blue"
-            @click="create">
-        Create Poem
+            @click="save">
+        Save Poem
         </v-btn>
 
         <div class="danger-alert" v-if="error">
@@ -175,7 +175,7 @@
             Panel
         },
         methods: {
-            async create () {
+            async save () {
                 this.error= null
                 const isEverythingFilled = Object
                     .keys(this.poem)
@@ -184,16 +184,30 @@
                     this.error = 'Please fill all required fields!'
                     return
                 }
+                const poemId = this.$store.state.route.params.poemId
                 try{
-                    await PoemsService.post(this.poem)
+                    await PoemsService.put(this.poem)
                     this.$router.push({
-                        name: 'poems'
+                        name: 'poem',
+                        params: {
+                            poemId: poemId
+                        }
                     })
-                } catch (error) {
-                    this.error = error.response.data.error
+                } catch (err) {
+                    console.log(err)
                 }
+            },
+        },
+        async mounted () {
+            try{
+                const poemId = this.$store.state.route.params.poemId
+                this.poem = (await PoemsService.show(poemId)).data
+
+            } catch (err) {
+                console.log(err)
             }
         }
+        
     }
 </script>
 

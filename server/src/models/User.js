@@ -2,6 +2,12 @@ const Promise = require('bluebird')
 const bcrypt = Promise.promisifyAll(require('bcrypt-nodejs'))
 
 
+/**
+ * 
+ * @param {*} user 
+ * @param {*} options 
+ * This method will hash a users password before entering into DB
+ */
 function hashPassword(user, options) {
     const SALT_FACTOR = 8
     

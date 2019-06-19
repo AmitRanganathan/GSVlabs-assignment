@@ -8,6 +8,7 @@ import { sync } from 'vuex-router-sync'
 import 'vuetify/dist/vuetify.min.css'
 import store from '@/store/store'
 
+
 Vue.config.productionTip = false
 
 Vue.use(Vuetify)

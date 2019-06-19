@@ -24,6 +24,13 @@
                             <div class="poem-author">
                                 {{poem.author}} 
                             </div>
+                        </v-flex>
+
+                        <v-flex xs6>
+                            <div class="poem-date-created">
+                                Created on: {{moment(poem.createdAt).format('MMMM Do YYYY h:mm a')}}
+                            </div>
+                            <br>
                             <v-btn 
                                 dark
                                 class="light-blue"
@@ -35,12 +42,6 @@
                                 })">
                                 View Poem
                             </v-btn>
-                        </v-flex>
-
-                        <v-flex xs6>
-                            <div class="poem-date-created">
-                                Created on: {{moment(poem.createdAt).format('MMMM Do YYYY h:mm a')}}
-                            </div>
                         </v-flex>
                     </v-layout>
                 </div>
@@ -61,7 +62,6 @@
         },
         components: {
             Panel
-            
         },
         methods: {
             navigateTo(route) {

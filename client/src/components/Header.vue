@@ -1,13 +1,14 @@
 <template>
     <v-toolbar fixed class="light-blue" dark>
         <v-toolbar-title class="mr-4">
-            <span class="home" @click="navigateTo({name: 'root'})">
+            <span v-if="!$store.state.isLoggedIn"
+            class="home" @click="navigateTo({name: 'root'})">
                 Poem Generator
             </span>
         </v-toolbar-title>
 
         <v-toolbar-items>
-            <v-btn 
+            <v-btn v-if="$store.state.isLoggedIn"
                 flat dark
                 @click="navigateTo({name: 'poems'})"> 
                 View Poems 
