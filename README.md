@@ -56,3 +56,5 @@ To run:
 ```bash
 npm start
 ```
+
+Again, to view the application, go to http://localhost:8080. Enjoy!
