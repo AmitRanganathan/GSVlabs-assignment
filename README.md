@@ -7,13 +7,16 @@ A vue.js/node.js/express/sql project to generate a poem based off user inputs
  In the terminal window for client, perform:
 
   # npm install
+  If you get audit issues, run:
+  # npm audit fix
   # npm run dev
   
-  In the terminal window for client, perform:
+  In the terminal window for server, perform:
   
   # npm install 
   
-  If you get audit issues, run npm audit fix
+  If you get audit issues, 
+  # run npm audit fix
   # npm start 
   
   If you get an error saying to manually download sqlite 3, perform:
