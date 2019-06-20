@@ -48,6 +48,7 @@ module.exports = {
         }
     },
     async delete(req, res) {
+        console.log('In delete method in poems controller')
         try{
             const { poemId } = req.params
             const poem = await Poem.findByPk(poemId)

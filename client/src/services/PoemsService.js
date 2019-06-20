@@ -14,6 +14,6 @@ export default {
         return Api().put(`poems/${poem.id}`, poem)
     },
     delete(poemId) {
-        return Api().get(`poems/${poemId}`)
+        return Api().delete(`poems/${poemId}`)
     }
 }

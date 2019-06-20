@@ -47,7 +47,6 @@ export default new Router({
       path: '/poems/:poemId/edit',
       name: 'poems-edit',
       component: EditPoem
-    }
-
+    },
   ]
 })
