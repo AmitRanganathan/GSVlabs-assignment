@@ -9,7 +9,7 @@
                     </div>
                     <br>
 
-                    <div >
+                    <div class ="poem-text">
                         from {{poem.verb1.toLowerCase()}} {{poem.prep1.toLowerCase()}} {{poem.adj1.toLowerCase()}} {{poem.noun1.toLowerCase()}} 
                         {{poem.prep2.toLowerCase()}} {{poem.verb2.toLowerCase()}} {{poem.prep3.toLowerCase()}} {{poem.adj2}} San Mateo
                         <br>
@@ -91,6 +91,13 @@
 
 <style>
 .poem-title {
-    font-size: 24px
+    font-size: 40px;
+    text-shadow: 1px 1px grey;
+}
+
+.poem-text {
+    border: 5px solid skyblue;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px #888888;
 }
 </style>
