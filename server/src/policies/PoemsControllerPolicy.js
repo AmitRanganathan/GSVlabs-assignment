@@ -1,10 +1,10 @@
 const Joi = require('joi')  // Used for validating various things in express.js
 
 /**
- * This file will be uesd in the routes.js file just for validation
+ * This file will be used in the routes.js file just for validation
  */
 module.exports = {
-    // This method will be used as a middleware method to validate emails and passwords
+    // This method will be used as a middleware method to validate user inputs while creating a poem
     post(req, res, next) {
         const schema = {
             title: Joi.string().regex(
