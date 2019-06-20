@@ -64,102 +64,102 @@ module.exports = {
             switch (error.details[0].context.key) {
                 case 'title':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
                 case 'author':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
                 
                 case 'noun1':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'noun2':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'noun3':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'adj1':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'adj2':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'adj3':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'adverb1':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'adverb2':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'adverb3':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
                 
                 case 'prep1':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'prep2':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'prep3':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'verb1':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'verb2':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
 
                 case 'verb3':
                     res.status(400).send({
-                        error: 'Please use English characters only.'
+                        error: 'Please use English letters only.'
                     })
                     break
                 default:
