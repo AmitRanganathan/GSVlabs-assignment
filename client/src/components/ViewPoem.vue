@@ -10,15 +10,18 @@
                     <br>
 
                     <div class ="poem-text">
-                        from {{poem.verb1.toLowerCase()}} {{poem.prep1.toLowerCase()}} {{poem.adj1.toLowerCase()}} {{poem.noun1.toLowerCase()}} 
-                        {{poem.prep2.toLowerCase()}} {{poem.verb2.toLowerCase()}} {{poem.prep3.toLowerCase()}} {{poem.adj2}} San Mateo
+                        
+
+                        from {{poem.verb1.toLowerCase()}} {{poem.prep1.toLowerCase()}} the {{poem.adj1.toLowerCase()}} {{poem.noun1.toLowerCase()}} 
+                        to {{poem.verb2.toLowerCase()}} {{poem.prep3.toLowerCase()}} {{poem.adj2}} San Mateo
                         <br>
-                        all {{poem.author.charAt(0).toUpperCase() + poem.author.slice(1)}} could think about was how they got a {{poem.adj3.toLowerCase()}} patio.
+                        all {{poem.author.charAt(0).toUpperCase() + poem.author.slice(1)}} could think about was how they got {{poem.prep2.toLowerCase()}} a 
+                        {{poem.adj3.toLowerCase()}} patio
                         <br>
                         {{poem.adverb1.toLowerCase()}} {{poem.verb3.toLowerCase()}} his {{poem.noun2.toLowerCase()}} in the {{poem.noun3.toLowerCase()}} 
-                        and {{poem.adverb2.toLowerCase()}} staring at a bird.
+                        and {{poem.adverb2.toLowerCase()}} staring at a bird
                         <br>
-                        all {{poem.author.charAt(0).toUpperCase() + poem.author.slice(1)}} was {{poem.adverb3.toLowerCase()}} thinking bout was how they is such a nerd.
+                        all {{poem.author.charAt(0).toUpperCase() + poem.author.slice(1)}} was {{poem.adverb3.toLowerCase()}} thinking about was how they are such a nerd
                         <br>
                     </div>
                     <br>

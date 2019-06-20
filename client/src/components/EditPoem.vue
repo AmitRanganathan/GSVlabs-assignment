@@ -105,7 +105,7 @@
         </v-flex>
 
         <v-flex xs4>
-            <panel title="Verbs" class="ml-3">
+            <panel title="Verbs (end w/ 'ing')" class="ml-3">
                  <v-text-field
                     label="Verb 1 *"
                     :rules="[rules.required]"
