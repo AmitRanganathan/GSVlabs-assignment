@@ -9,7 +9,8 @@ You must have npm to run this project.  If you do not, you can use homebrew to i
 
 ## Usage
 Clone the repo into your local machine.  
-Have two terminal windows open, one for client and one for server.
+Have two terminal windows open. cd into client on one of the terminal windows and cd into server in the other terminal window. 
+
 
 ## Client
 In client:
