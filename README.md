@@ -1,24 +1,57 @@
-# GSVlabs-assignment
-A vue.js/node.js/express/sql project to generate a poem based off user inputs
+# Poem Generator
 
- Clone the repo onto your local machine.
- cd into the folder on your terminal.
- Have one terminal window open for the client folder and another terminal window open for the server folder.
- In the terminal window for client, perform:
+A vue.js/node.js/express/sql project to generate a poem based off user inputs.
 
-  # npm install
-  # npm run dev
-  
-  In the terminal window for client, perform:
-  
-  # npm install 
-  
-  If you get audit issues, run npm audit fix
-  # npm start 
-  
-  If you get an error saying to manually download sqlite 3, perform:
-  
-  # npm un sqlite3
-  # npm i —save sqlite3
-  # npm start
-  
+## Installation
+
+You must have npm to run this project.  If you do not, you can use homebrew to install npm
+
+
+## Usage
+Clone the repo into your local machine.  
+Have two terminal windows open, one for client and one for server.
+
+## Client
+In client:
+```bash
+npm install
+```
+
+If you get audit issues, run:
+```bash
+  npm audit fix
+```
+
+Then run:
+```bash
+  npm run dev
+```
+Your client side is running now.  You can go to http://localhost:8080 to view the client side.
+
+## Server
+In server:
+```bash
+npm install
+```
+
+If you get audit issues, run:
+```bash
+  npm audit fix
+```
+
+Then run:
+```bash
+  npm start
+```
+
+If you get an error telling you to manually install sqlite3, perform the following operations:
+
+```bash
+npm un sqlite3
+npm i —save sqlite3
+```
+
+To run:
+```bash
+npm start
+```
