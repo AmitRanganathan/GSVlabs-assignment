@@ -19,12 +19,12 @@ npm install
 
 If you get audit issues, run:
 ```bash
-  npm audit fix
+npm audit fix
 ```
 
 Then run:
 ```bash
-  npm run dev
+npm run dev
 ```
 Your client side is running now.  You can go to http://localhost:8080 to view the client side.
 
@@ -36,12 +36,12 @@ npm install
 
 If you get audit issues, run:
 ```bash
-  npm audit fix
+npm audit fix
 ```
 
 Then run:
 ```bash
-  npm start
+npm start
 ```
 
 If you get an error telling you to manually install sqlite3, perform the following operations:
