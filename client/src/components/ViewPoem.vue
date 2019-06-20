@@ -4,7 +4,7 @@
         <div>
             <v-layout>
                 <v-flex>
-                    <div class="poem-title">
+                    <div class="title-poem">
                         {{poem.title}} - {{poem.author}} 
                     </div>
                     <br>
@@ -90,14 +90,18 @@
 </script>
 
 <style>
-.poem-title {
+.title-poem {
     font-size: 40px;
     text-shadow: 1px 1px grey;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .poem-text {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
     border: 5px solid skyblue;
     padding: 20px;
     box-shadow: 5px 5px 5px 5px #888888;
+    
 }
 </style>
