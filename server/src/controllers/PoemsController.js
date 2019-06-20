@@ -5,7 +5,6 @@ module.exports = {
     async index(req, res) {
         try{
             const poems = await Poem.findAll({
-                limit: 5
             })
             res.send(poems)
         } catch (err) {
@@ -52,7 +51,6 @@ module.exports = {
         try{
             const { poemId } = req.params
             const poem = await Poem.findByPk(poemId)
-            console.log("in delete method")
             await poem.destroy()
             res.send(req.body)
         } catch (err) {

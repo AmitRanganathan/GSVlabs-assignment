@@ -24,7 +24,7 @@ app.use(cors()) // This could be a security risk
 // Get the various routes from the routes.js file
 require('./routes')(app)
 
-sequelize.sync()
+sequelize.sync({force: true})
     .then(() => {
         app.listen(config.port)
         console.log(`server started on port ${config.port}`)
