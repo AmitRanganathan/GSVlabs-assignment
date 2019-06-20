@@ -26,6 +26,7 @@ Then run:
 ```bash
 npm run dev
 ```
+You may see a lot of linting issues on the terminal window.  They should not matter. 
 Your client side is running now.  You can go to http://localhost:8080 to view the client side.
 
 ## Server
