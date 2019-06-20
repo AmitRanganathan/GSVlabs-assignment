@@ -52,6 +52,7 @@ If you get an error telling you to manually install sqlite3, perform the followi
 npm un sqlite3
 npm i —save sqlite3
 ```
+The second command above has two dashes
 
 To run:
 ```bash
