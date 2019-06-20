@@ -8,7 +8,7 @@
         </v-toolbar-title>
 
         <v-toolbar-items>
-            <v-btn v-if="$store.state.isLoggedIn"
+            <v-btn 
                 flat dark
                 @click="navigateTo({name: 'poems'})"> 
                 View Poems 
