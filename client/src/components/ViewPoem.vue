@@ -39,7 +39,7 @@
                         <v-btn v-if="isLoggedIn"
                             dark
                             class="light-blue"
-                            @click="deletePoem">
+                            @click="deletePoem(poem.id)">
                             Delete 
                         </v-btn>
                     </div>
@@ -73,9 +73,9 @@
             navigateTo (route) {
                 this.$router.push(route)
             },
-            async deletePoem () {
+            async deletePoem (poemId) {
                 try{
-                    await PoemsService.delete(this.poem)
+                    await PoemsService.delete(poemId)
                     this.poem = null
                     this.$router.push('/poems')
                 } catch (err) {
